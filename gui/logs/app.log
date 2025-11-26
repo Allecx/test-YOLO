@@ -1,0 +1,44 @@
+2025-11-26 17:50:03,179 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-26 17:50:03,765 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt (type=pt)
+2025-11-26 17:50:03,766 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-26 17:50:03,766 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-26 17:50:03,766 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-26 17:50:04,003 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-26 17:50:04,003 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-26 17:50:04,004 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-26 17:50:04,004 [INFO] [__main__] 模型加载成功: name=yolo12s.pt, task=detect, device=cuda
+2025-11-26 17:50:06,122 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-26 17:50:06,122 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-26 17:50:06,122 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-26 17:50:06,901 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-26 17:50:06,901 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-26 17:50:06,902 [INFO] [app.controller] 推理线程启动
+2025-11-26 17:50:13,905 [INFO] [__main__] 收到停止检测请求
+2025-11-26 17:50:13,905 [INFO] [app.controller] 请求停止推理线程
+2025-11-26 17:50:13,921 [INFO] [app.controller] 推理线程正常退出
+2025-11-26 17:50:13,921 [INFO] [app.controller] 推理线程已结束
+2025-11-26 17:50:13,921 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-26 17:50:22,208 [INFO] [__main__] 应用正常退出
+2025-11-26 17:55:00,681 [INFO] [__main__] 应用启动
+2025-11-26 17:55:00,732 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-26 17:55:03,835 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-26 17:55:04,465 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt (type=pt)
+2025-11-26 17:55:04,465 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-26 17:55:04,465 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-26 17:55:04,465 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-26 17:55:04,695 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-26 17:55:04,696 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-26 17:55:04,696 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-26 17:55:04,696 [INFO] [__main__] 模型加载成功: name=yolo12s.pt, task=detect, device=cuda
+2025-11-26 17:55:06,579 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-26 17:55:06,580 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-26 17:55:06,580 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-26 17:55:07,374 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-26 17:55:07,375 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-26 17:55:07,375 [INFO] [app.controller] 推理线程启动
+2025-11-26 17:55:15,586 [INFO] [__main__] 收到停止检测请求
+2025-11-26 17:55:15,587 [INFO] [app.controller] 请求停止推理线程
+2025-11-26 17:55:15,612 [INFO] [app.controller] 推理线程正常退出
+2025-11-26 17:55:15,612 [INFO] [app.controller] 推理线程已结束
+2025-11-26 17:55:15,612 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-26 17:55:17,276 [INFO] [__main__] 应用正常退出
