@@ -1,5 +1,5 @@
 # core/visualizer.py
-
+from PySide6.QtGui import QImage, QPixmap
 import cv2
 from PIL import Image
 import logging
@@ -51,6 +51,19 @@ class Visualizer:
         rgb_image = cv2.cvtColor(resized, cv2.COLOR_BGR2RGB)
         pil_img = Image.fromarray(rgb_image)
         return pil_img
+
+    # @staticmethod
+    # def resize_for_display(cv_img, target_width: int, target_height: int):
+    #     h, w = cv_img.shape[:2]
+    #     if h == 0 or w == 0:
+    #         return QPixmap()
+    #     ratio = min(target_width / w, target_height / h)
+    #     new_w, new_h = int(w * ratio), int(h * ratio)
+    #     resized = cv2.resize(cv_img, (new_w, new_h), interpolation=cv2.INTER_LANCZOS4)
+    #     rgb = cv2.cvtColor(resized, cv2.COLOR_BGR2RGB)
+    #     qimg = QImage(rgb.data, new_w, new_h, 3 * new_w, QImage.Format_RGB888)
+    #     pixmap = QPixmap.fromImage(qimg.copy())  # 拷贝数据生成 QPixmap
+    #     return pixmap
 
     @staticmethod
     def format_info_text(det_result) -> str:

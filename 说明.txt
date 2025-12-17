@@ -1,0 +1,62 @@
+各模块职责说明
+
+core/detector.py：定义检测器 Detector 类，负责模型的加载和推理接口。通过调用 infra 层的适配器加载 Ultralytics YOLO 模型（支持 .pt 和 .onnx），
+提供统一的 load_model 和 infer 方法。代码结构便于将来扩展到其他任务类型（如分割、旋转框），因为模型适配逻辑被封装在适配器中。
+
+core/visualizer.py：定义可视化工具类 Visualizer，负责与显示相关的图像和文本处理。提供 resize_for_display 方法对OpenCV图像进行缩放并返回 PIL 图像
+（不依赖 Tk GUI，已去除对 ImageTk 的直接依赖），以及 format_info_text 方法将检测结果格式化为易读的文本信息。Visualizer 不直接调用 Tkinter，
+仅进行纯图像和文本逻辑，方便后续扩展（如绘制分割掩码等）。
+
+core/source.py：定义数据源类型枚举 SourceType（IMAGE/VIDEO/CAMERA）和帧源类 FrameSource。FrameSource 封装了图像、视频文件、摄像头三种来源的帧读取逻辑
+：open() 方法打开视频文件或摄像头，frames() 返回一个生成器逐帧产出图像数据，统一了不同来源的读取接口，release() 用于释放资源。通过该模块，UI
+不直接使用 OpenCV 的 VideoCapture，而是通过统一的帧源接口获取图像帧。
+
+core/dto.py：定义数据传输对象（DTO）用于封装检测结果，包括 Detection（单个目标的类别、置信度和边界框）和 DetectionResult（包含多个 Detection 及类别名映射）。
+DetectionResult 提供方法如 is_empty 判断是否有检测目标，count_by_class 统计各类别数量，并提供类方法 from_yolo 将 Ultralytics YOLO 的结果转换为本地的数据对象。
+使用 DTO 模块可使应用逻辑与底层模型解耦，在将来扩展到分割等任务时，可以增加相应的数据结构而不影响其他层。
+
+infra/ultralytics_adapter.py：定义 Ultralytics 模型适配器类 UltralyticsAdapter，负责与 Ultralytics YOLO 库的交互。
+封装模型加载和推理调用细节：load_model 使用 YOLO 类加载 .pt 或 .onnx 模型文件，自动选择CUDA或CPU执行，并返回模型的任务类型和类别信息；
+infer 方法对输入图像执行推理并返回结果。通过将 Ultralytics 相关调用放在 infra 层，使 Detector 不直接依赖 Ultralytics 实现，方便未来替换或增加其他模型框架的支持。
+
+app/controller.py：定义应用层控制器类 DetectionController，负责协调UI和核心逻辑，管理推理线程与队列。DetectionController
+内部持有一个 Detector 实例以及输入/输出队列：提供 load_model 接口调用 Detector 加载模型；
+start_inference_thread 和 stop_inference_thread 控制后台推理线程的启动与停止；submit_frame 方法向输入队列提交帧进行异步推理（采用队列丢弃策略保证实时性）；
+get_result 非阻塞地从输出队列获取最新结果。其内部 _inference_worker 方法在单独线程中循环，从 input_queue 取出帧用 Detector 推理，取得结果后封装为 DetectionResult
+ 并与原始帧、注释图像一起放入 output_queue。这样主界面线程只需定时检查输出队列即可更新UI，实现了推理过程与界面解耦，确保GUI不卡顿。
+
+gui/app.py：Tkinter 图形界面模块，包含 YOLODetectorApp 应用类。负责构建和管理用户界面，与用户交互并调用 DetectionController 完成检测任务。
+界面布局保持与原项目一致，包括模型选择区、功能按钮区、图像显示区和信息输出区。YOLODetectorApp 内部将大部分逻辑操作委托给控制器和核心模块：
+
+调用 controller.load_model 加载模型，并通过消息框显示结果或错误；
+
+在“图片检测”中，使用 FrameSource 读取图像，直接调用 controller.detector.infer 同步获取结果（因为单张图片检测快速），
+随后利用 Visualizer 缩放显示原图和结果图，并格式化检测信息文本显示；
+
+在“摄像头检测”和“视频检测”中，使用 FrameSource 打开相机或视频，将 is_detecting 置为 True，启动后台推理线程，
+然后通过 root.after 定时执行捕获循环：每帧从 FrameSource 获取图像后调用 controller.submit_frame 投递到队列。视频模式下采用较小延迟(after(1))确保读取顺畅，
+摄像头模式下稍大延迟(after(30))避免占用过高CPU；
+
+poll_results 方法每30毫秒检查输出队列，如果有结果则调用 display_image 和 display_detection_info 更新界面；
+
+display_image 使用 Visualizer.resize_for_display 将OpenCV图像缩放为合适大小的PIL图像，再转换为 ImageTk.PhotoImage 设置到Label组件显示（并保存引用防止GC）；
+display_detection_info 则调用 Visualizer.format_info_text 将 DetectionResult 转为文本输出到Text组件。
+整个 GUI 层不直接处理繁重的计算，主要负责事件绑定和界面更新，使应用在保持原有界面不变的情况下，实现了后台线程推理、前台界面流畅更新的目标。
+
+整体工作流程图
+flowchart TD
+    GUI[GUI界面 (YOLODetectorApp)] -->|用户选择模型文件| Controller[控制器 (DetectionController)]
+    Controller -->|调用 load_model| Detector[检测器 (Detector)]
+    Detector -->|通过 UltralyticsAdapter 加载模型| Adapter[模型适配器 (UltralyticsAdapter)]
+    Adapter -->|返回模型信息| GUI
+    GUI -->|用户开始摄像头/视频检测| Controller
+    GUI -->|打开帧源 (摄像头/视频)| Source[帧源 (FrameSource)]
+    Controller -->|启动推理线程| Worker[推理线程]
+    Worker -->|调用 Detector.infer| Detector
+    Detector -->|执行模型推理| YOLO[YOLO 模型]
+    YOLO -->|返回检测结果| Detector
+    Detector -->|返回 DetectionResult 对象| Worker
+    Worker -->|结果加入输出队列| GUI
+    GUI -->|定时轮询输出队列| GUI
+    GUI -->|显示图像和检测信息| GUI
+
