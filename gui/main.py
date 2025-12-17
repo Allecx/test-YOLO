@@ -250,7 +250,6 @@ class YOLODetectorApp:
                 self.display_image(original_img, self.original_label)
                 self.display_image(annotated_img, self.result_label)
                 self.display_detection_info(det_result)
-
                 # 如果开启了保存检测视频，则写入到 VideoWriter
                 self.maybe_write_video(annotated_img)
         except Exception:
@@ -329,7 +328,7 @@ class YOLODetectorApp:
 
     def init_video_writer_if_needed(self, frame_shape):
         """
-        创建 Windows 兼容性较好的 视频保存器（根据保存路径自动选择编码器）
+        创建 Windows 兼容性较好的视频保存器（根据保存路径自动选择编码器）
         """
         if not self.save_video_var.get():
             return

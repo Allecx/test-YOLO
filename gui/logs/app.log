@@ -42,3 +42,291 @@
 2025-11-26 17:55:15,612 [INFO] [app.controller] 推理线程已结束
 2025-11-26 17:55:15,612 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
 2025-11-26 17:55:17,276 [INFO] [__main__] 应用正常退出
+2025-11-26 19:05:56,915 [INFO] [__main__] 应用启动
+2025-11-26 19:05:56,967 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-26 19:05:59,856 [INFO] [__main__] 应用正常退出
+2025-11-27 16:57:45,579 [INFO] [__main__] 应用启动
+2025-11-27 16:57:45,654 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-27 16:59:05,200 [INFO] [__main__] 应用正常退出
+2025-11-27 16:59:06,798 [INFO] [__main__] 应用启动
+2025-11-27 16:59:06,844 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-27 16:59:57,110 [INFO] [__main__] 应用启动
+2025-11-27 16:59:57,156 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-27 17:00:23,029 [INFO] [__main__] 应用启动
+2025-11-27 17:00:23,074 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-27 17:02:27,924 [INFO] [__main__] 应用启动
+2025-11-27 17:02:27,968 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-28 11:16:34,389 [INFO] [__main__] 应用启动
+2025-11-28 11:16:34,476 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-11-28 11:16:52,798 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolov5su.pt
+2025-11-28 11:16:54,122 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolov5su.pt (type=pt)
+2025-11-28 11:16:54,122 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolov5su.pt, format=pt
+2025-11-28 11:16:54,122 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolov5su.pt, format=pt
+2025-11-28 11:16:54,122 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolov5su.pt
+2025-11-28 11:16:54,414 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-28 11:16:54,414 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-28 11:16:54,415 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-28 11:16:54,415 [INFO] [__main__] 模型加载成功: name=yolov5su.pt, task=detect, device=cuda
+2025-11-28 11:16:57,462 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-28 11:16:57,463 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-28 11:16:57,463 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-28 11:16:58,346 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-28 11:16:58,346 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-28 11:16:58,346 [INFO] [app.controller] 推理线程启动
+2025-11-28 11:17:04,943 [INFO] [__main__] 收到停止检测请求
+2025-11-28 11:17:04,943 [INFO] [app.controller] 请求停止推理线程
+2025-11-28 11:17:04,953 [INFO] [app.controller] 推理线程正常退出
+2025-11-28 11:17:04,953 [INFO] [app.controller] 推理线程已结束
+2025-11-28 11:17:04,953 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-28 11:17:06,339 [INFO] [__main__] 应用正常退出
+2025-11-28 16:13:33,581 [INFO] [__main__] 应用启动 (PySide6)
+2025-11-28 16:13:33,597 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-28 16:13:50,874 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-28 16:13:52,056 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt (type=pt)
+2025-11-28 16:13:52,056 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-28 16:13:52,057 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-28 16:13:52,057 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-28 16:13:52,316 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-28 16:13:52,316 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-28 16:13:52,316 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-28 16:13:52,316 [INFO] [__main__] 模型加载成功: name=yolo12s.pt, task=detect, device=cuda
+2025-11-28 16:13:57,993 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-28 16:13:57,993 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-28 16:13:57,993 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-28 16:13:58,766 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-28 16:13:58,766 [INFO] [app.controller] 推理线程启动
+2025-11-28 16:13:58,766 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-28 16:14:26,103 [INFO] [__main__] 收到停止检测请求
+2025-11-28 16:14:26,103 [INFO] [app.controller] 请求停止推理线程
+2025-11-28 16:14:26,114 [INFO] [app.controller] 推理线程正常退出
+2025-11-28 16:14:26,114 [INFO] [app.controller] 推理线程已结束
+2025-11-28 16:14:26,114 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-28 16:14:26,374 [INFO] [__main__] 应用正常退出 (PySide6)
+2025-11-28 16:16:12,897 [INFO] [__main__] 应用启动 (PySide6)
+2025-11-28 16:16:12,915 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-28 16:16:24,462 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt
+2025-11-28 16:16:25,861 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt (type=pt)
+2025-11-28 16:16:25,861 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt, format=pt
+2025-11-28 16:16:25,861 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt, format=pt
+2025-11-28 16:16:25,861 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt
+2025-11-28 16:16:26,099 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-28 16:16:26,099 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-28 16:16:26,099 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-28 16:16:26,099 [INFO] [__main__] 模型加载成功: name=yolo11s.pt, task=detect, device=cuda
+2025-11-28 16:16:27,807 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-28 16:16:27,808 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-28 16:16:27,808 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-28 16:16:28,579 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-28 16:16:28,579 [INFO] [app.controller] 推理线程启动
+2025-11-28 16:16:28,579 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-28 16:16:35,330 [INFO] [__main__] 收到停止检测请求
+2025-11-28 16:16:35,330 [INFO] [app.controller] 请求停止推理线程
+2025-11-28 16:16:35,337 [INFO] [app.controller] 推理线程正常退出
+2025-11-28 16:16:35,337 [INFO] [app.controller] 推理线程已结束
+2025-11-28 16:16:35,337 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-28 16:16:35,591 [INFO] [__main__] 应用正常退出 (PySide6)
+2025-11-28 16:40:47,833 [INFO] [__main__] 应用启动 (PySide6)
+2025-11-28 16:40:47,850 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-28 16:40:55,882 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt
+2025-11-28 16:40:57,016 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt (type=pt)
+2025-11-28 16:40:57,016 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt, format=pt
+2025-11-28 16:40:57,016 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt, format=pt
+2025-11-28 16:40:57,016 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolo11s.pt
+2025-11-28 16:40:57,254 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-28 16:40:57,254 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-28 16:40:57,254 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-28 16:40:57,254 [INFO] [__main__] 模型加载成功: name=yolo11s.pt, task=detect, device=cuda
+2025-11-28 16:40:59,687 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-28 16:40:59,687 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-28 16:40:59,687 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-28 16:41:00,493 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-28 16:41:00,493 [INFO] [app.controller] 推理线程启动
+2025-11-28 16:41:00,493 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-28 16:41:33,788 [INFO] [__main__] 收到停止检测请求
+2025-11-28 16:41:33,788 [INFO] [app.controller] 请求停止推理线程
+2025-11-28 16:41:33,800 [INFO] [app.controller] 推理线程正常退出
+2025-11-28 16:41:33,800 [INFO] [app.controller] 推理线程已结束
+2025-11-28 16:41:33,800 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-28 16:41:35,854 [INFO] [__main__] 收到停止检测请求
+2025-11-28 16:41:35,854 [INFO] [app.controller] 请求停止推理线程
+2025-11-28 16:41:35,854 [INFO] [app.controller] 推理线程已结束
+2025-11-28 16:41:35,860 [INFO] [__main__] 应用正常退出 (PySide6)
+2025-11-28 16:45:08,993 [INFO] [__main__] 应用启动
+2025-11-28 16:45:09,010 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-28 16:45:11,158 [INFO] [__main__] 收到停止检测请求
+2025-11-28 16:45:11,166 [INFO] [__main__] 应用正常退出 (PySide6)
+2025-11-29 12:51:52,723 [INFO] [__main__] 应用启动
+2025-11-29 12:51:52,768 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-29 12:52:27,002 [INFO] [__main__] 收到停止检测请求
+2025-11-29 12:52:27,010 [INFO] [__main__] 应用正常退出
+2025-11-29 14:12:32,861 [INFO] [__main__] 应用启动
+2025-11-29 14:12:32,902 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-29 14:12:41,050 [INFO] [__main__] 收到停止检测请求
+2025-11-29 14:12:41,057 [INFO] [__main__] 应用正常退出
+2025-11-29 14:22:53,915 [INFO] [__main__] 应用启动
+2025-11-29 14:22:53,931 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-11-29 14:23:04,418 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-29 14:23:05,973 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt (type=pt)
+2025-11-29 14:23:05,973 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-29 14:23:05,974 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt, format=pt
+2025-11-29 14:23:05,974 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/object/yolo12s.pt
+2025-11-29 14:23:06,328 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=detect, device=cuda, classes=80
+2025-11-29 14:23:06,328 [INFO] [core.detector] 模型加载成功: task=detect, device=cuda
+2025-11-29 14:23:06,328 [INFO] [app.controller] 模型加载成功: task=detect, device=cuda
+2025-11-29 14:23:06,329 [INFO] [__main__] 模型加载成功: name=yolo12s.pt, task=detect, device=cuda
+2025-11-29 14:23:08,846 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-29 14:23:08,846 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-29 14:23:08,846 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:23:09,697 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-29 14:23:09,697 [INFO] [app.controller] 推理线程启动
+2025-11-29 14:23:09,697 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-29 14:23:23,948 [INFO] [__main__] 收到停止检测请求
+2025-11-29 14:23:23,948 [INFO] [app.controller] 请求停止推理线程
+2025-11-29 14:23:23,972 [INFO] [app.controller] 推理线程正常退出
+2025-11-29 14:23:23,972 [INFO] [app.controller] 推理线程已结束
+2025-11-29 14:23:23,972 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:23:30,729 [INFO] [__main__] 选择模型文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/yolo11s-seg.pt
+2025-11-29 14:23:32,616 [INFO] [__main__] 开始加载模型: E:/nader/学习项目/Allecx-main/learn/mode/seg/yolo11s-seg.pt (type=pt)
+2025-11-29 14:23:32,616 [INFO] [app.controller] DetectionController: 请求加载模型 path=E:/nader/学习项目/Allecx-main/learn/mode/seg/yolo11s-seg.pt, format=pt
+2025-11-29 14:23:32,616 [INFO] [core.detector] Detector.load_model: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/yolo11s-seg.pt, format=pt
+2025-11-29 14:23:32,616 [INFO] [infra.ultralytics_adapter] UltralyticsAdapter: 开始加载模型 E:/nader/学习项目/Allecx-main/learn/mode/seg/yolo11s-seg.pt
+2025-11-29 14:23:32,718 [INFO] [infra.ultralytics_adapter] Ultralytics 模型加载成功: task=segment, device=cuda, classes=80
+2025-11-29 14:23:32,719 [INFO] [core.detector] 模型加载成功: task=segment, device=cuda
+2025-11-29 14:23:32,719 [INFO] [app.controller] 模型加载成功: task=segment, device=cuda
+2025-11-29 14:23:32,719 [INFO] [__main__] 模型加载成功: name=yolo11s-seg.pt, task=segment, device=cuda
+2025-11-29 14:23:34,590 [INFO] [__main__] 开始摄像头检测, 启用跟踪=False
+2025-11-29 14:23:34,591 [INFO] [app.controller] 更新 tracking 配置: enabled=False, tracker_cfg=bytetrack.yaml
+2025-11-29 14:23:34,591 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:23:35,138 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=False, tracker_cfg=bytetrack.yaml)
+2025-11-29 14:23:35,138 [INFO] [app.controller] 推理线程启动
+2025-11-29 14:23:35,138 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-29 14:24:00,886 [INFO] [__main__] 收到停止检测请求
+2025-11-29 14:24:00,886 [INFO] [app.controller] 请求停止推理线程
+2025-11-29 14:24:00,892 [INFO] [app.controller] 推理线程正常退出
+2025-11-29 14:24:00,892 [INFO] [app.controller] 推理线程已结束
+2025-11-29 14:24:00,893 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:24:06,394 [INFO] [__main__] 开始摄像头检测, 启用跟踪=True
+2025-11-29 14:24:06,394 [INFO] [app.controller] 更新 tracking 配置: enabled=True, tracker_cfg=bytetrack.yaml
+2025-11-29 14:24:06,397 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:24:06,904 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=True, tracker_cfg=bytetrack.yaml)
+2025-11-29 14:24:06,904 [INFO] [app.controller] 推理线程启动
+2025-11-29 14:24:06,904 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-29 14:24:12,561 [INFO] [__main__] 收到停止检测请求
+2025-11-29 14:24:12,561 [INFO] [app.controller] 请求停止推理线程
+2025-11-29 14:24:12,585 [INFO] [app.controller] 推理线程正常退出
+2025-11-29 14:24:12,586 [INFO] [app.controller] 推理线程已结束
+2025-11-29 14:24:12,586 [INFO] [core.source] FrameSource.release: 释放资源 type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:24:20,191 [INFO] [__main__] 选择输出视频路径: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:21,685 [INFO] [__main__] 开始摄像头检测, 启用跟踪=True
+2025-11-29 14:24:21,685 [INFO] [app.controller] 更新 tracking 配置: enabled=True, tracker_cfg=bytetrack.yaml
+2025-11-29 14:24:21,685 [INFO] [core.source] 打开帧源: type=SourceType.CAMERA, path_or_id=None
+2025-11-29 14:24:22,243 [INFO] [app.controller] 推理线程开始运行 (imgsz=640, tracking=True, tracker_cfg=bytetrack.yaml)
+2025-11-29 14:24:22,243 [INFO] [app.controller] 推理线程启动
+2025-11-29 14:24:22,243 [INFO] [__main__] 摄像头 FPS 估计为 30.00
+2025-11-29 14:24:22,741 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:22,767 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:25,913 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:25,914 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:26,926 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:26,927 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:27,828 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:27,828 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:30,148 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:30,149 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:33,856 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:33,856 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,044 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,044 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,202 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,203 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,365 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,365 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,511 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,512 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,672 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,672 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,821 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,822 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:34,979 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:34,979 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:35,194 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:35,194 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:35,332 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:35,332 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:35,528 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:35,528 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:35,680 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:35,680 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:36,004 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:36,004 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:36,320 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:36,321 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:36,467 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:36,468 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:36,614 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:36,614 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:36,793 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:36,794 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:36,943 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:36,944 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:37,113 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:37,113 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:37,274 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:37,275 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:37,419 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:37,420 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:37,565 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:37,565 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:37,720 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:37,720 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:44,157 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:44,157 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:44,742 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:44,743 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:44,909 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:44,910 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:45,104 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:45,105 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:45,512 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:45,512 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:47,097 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:47,097 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:47,586 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:47,587 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:47,754 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:47,754 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:47,954 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:47,955 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:48,109 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:48,109 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:48,278 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:48,278 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:48,434 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:48,434 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:48,595 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:48,595 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:48,891 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:48,892 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:49,056 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:49,057 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:49,215 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:49,216 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:49,361 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:49,362 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:49,867 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:49,868 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:50,031 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:50,031 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-11-29 14:24:50,253 [INFO] [__main__] 初始化视频写入器: path=E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4, codec=avc1, fps=30.00, size=(640,480)
+2025-11-29 14:24:50,253 [ERROR] [__main__] 无法创建输出视频文件: E:/nader/学习项目/Allecx-main/learn/mode/seg/11.mp4
+2025-12-01 09:16:57,897 [INFO] [__main__] 应用启动
+2025-12-01 09:16:57,914 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-12-01 09:17:05,625 [INFO] [__main__] 收到停止检测请求
+2025-12-01 09:17:05,632 [INFO] [__main__] 应用正常退出
+2025-12-17 09:48:11,306 [INFO] [__main__] 应用启动
+2025-12-17 09:48:11,398 [INFO] [__main__] YOLODetectorApp 初始化完成
+2025-12-17 09:48:15,408 [INFO] [__main__] 应用正常退出
+2025-12-17 09:48:42,799 [INFO] [__main__] 应用启动
+2025-12-17 09:48:42,828 [INFO] [__main__] YOLODetectorWindow 初始化完成
+2025-12-17 09:48:49,990 [INFO] [__main__] 收到停止检测请求
+2025-12-17 09:48:50,000 [INFO] [__main__] 应用正常退出

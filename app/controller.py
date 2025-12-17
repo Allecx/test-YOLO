@@ -32,14 +32,14 @@ class DetectionController:
         self.detector = Detector()
         self.input_queue = queue.Queue(maxsize=1)
         self.output_queue = queue.Queue(maxsize=1)
-        self.thread: Optional[threading.Thread] = None
+        self.thread = None
         self.stop_flag = False
 
         # 跟踪相关配置
-        self.enable_tracking: bool = False
+        self.enable_tracking = False
         # 默认使用 ByteTrack 作为跟踪器（ultralytics 自带 tracker 配置）
-        self.tracker_cfg: Optional[str] = "bytetrack.yaml"
-        self.imgsz: int = 640  # 统一推理尺寸
+        self.tracker_cfg = "bytetrack.yaml"
+        self.imgsz = 640  # 统一推理尺寸
 
         logger.debug("DetectionController 实例化完成")
 
